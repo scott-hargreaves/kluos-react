@@ -1,9 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0353b3f-d604-41e7-b8f7-21a8528e9bb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/scotth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/katzie_logo-blwhol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Activity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/HistoryOfUse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/landUse/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/map/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/query/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/query/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/query/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/query/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/query/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/session/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/session/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/session/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/session/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/session/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/system/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/system/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/system/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/system/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/system/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/ducks/ui/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/Avatar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/LandingPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/Map.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/Query.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/SearchTextField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/SigninPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/UserMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/dialog/LandUseDialog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/ActivityList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/CheckboxSelect.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/CollapsibleTextEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/DateEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/HistoryOfUseEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/IndividualList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/LandUseEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/LandUseForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/LocationEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/RecordInformationEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/SiteActivityEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/SiteEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/SiteInformationEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/SourceInformationEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/editor/TextEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/leaflet/SiteGeoJSON.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/leaflet/SiteLayerGroup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/leaflet/TooltipGeoJSON.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/mapbox/VectorTileLayer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/query/QueryListItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/query/ResultItemMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/query/ResultList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/query/ResultListItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/LandUseEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/LandingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/Query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/QueryListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/ResultListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/SiteEditorContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/SiteGeoJSON.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YS8OwlewB9uFDZ4dRK0C9MMNVf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/components/editor" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/components/editor" />
+      <recent name="$PROJECT_DIR$/src/state/ducks/landUse" />
+      <recent name="$PROJECT_DIR$/src/views/containers" />
+      <recent name="$PROJECT_DIR$/src/state/ducks/ui" />
+      <recent name="$PROJECT_DIR$/src/state/ducks/query" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="constructor(props) {         super(props);         this.state = {             highlight: false,             timerHndl: null,         };     }" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0353b3f-d604-41e7-b8f7-21a8528e9bb0" name="Default Changelist" comment="" />
+      <created>1582924606325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582924606325</updated>
+      <workItem from="1582924609068" duration="347000" />
+      <workItem from="1582925010601" duration="8121000" />
+      <workItem from="1583090764175" duration="14280000" />
+      <workItem from="1583124095144" duration="3188000" />
+      <workItem from="1583167865191" duration="32054000" />
+      <workItem from="1583264408764" duration="17461000" />
+      <workItem from="1583297569098" duration="2425000" />
+      <workItem from="1583382473700" duration="706000" />
+      <workItem from="1583688422474" duration="22826000" />
+      <workItem from="1583722293922" duration="4201000" />
+      <workItem from="1583790356193" duration="1663000" />
+      <workItem from="1583814860632" duration="581000" />
+      <workItem from="1583882313934" duration="3569000" />
+      <workItem from="1583957690038" duration="13931000" />
+      <workItem from="1583983362101" duration="2671000" />
+      <workItem from="1584028039970" duration="33000" />
+      <workItem from="1584028335784" duration="23199000" />
+      <workItem from="1584130335969" duration="13607000" />
+      <workItem from="1584157304256" duration="3085000" />
+      <workItem from="1584200818599" duration="6163000" />
+      <workItem from="1584208322141" duration="14155000" />
+      <workItem from="1584289560788" duration="1525000" />
+      <workItem from="1584291136139" duration="652000" />
+      <workItem from="1584291833521" duration="3640000" />
+      <workItem from="1584296948409" duration="19045000" />
+      <workItem from="1584374933272" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582925208591">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1582925208591" />
+    <state x="679" y="358" width="682" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584375432476">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="679" y="358" width="682" height="404" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1584375432476" />
+    <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584226291599">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584226291599" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584316123536">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584316123536" />
+    <state width="1827" height="108" key="GridCell.Tab.0.bottom" timestamp="1584375263681">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1407" height="56" key="GridCell.Tab.0.bottom/70.27.1430.973@70.27.1430.973" timestamp="1584291110647" />
+    <state width="1489" height="79" key="GridCell.Tab.0.bottom/70.27.1512.897@70.27.1512.897" timestamp="1584373075308" />
+    <state width="1827" height="108" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584375263681" />
+    <state width="2907" height="56" key="GridCell.Tab.0.bottom/70.27.2930.1973@70.27.2930.1973" timestamp="1584291792716" />
+    <state width="1827" height="108" key="GridCell.Tab.0.center" timestamp="1584375263680">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1407" height="56" key="GridCell.Tab.0.center/70.27.1430.973@70.27.1430.973" timestamp="1584291110646" />
+    <state width="1489" height="79" key="GridCell.Tab.0.center/70.27.1512.897@70.27.1512.897" timestamp="1584373075307" />
+    <state width="1827" height="108" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584375263680" />
+    <state width="2907" height="56" key="GridCell.Tab.0.center/70.27.2930.1973@70.27.2930.1973" timestamp="1584291792712" />
+    <state width="1827" height="108" key="GridCell.Tab.0.left" timestamp="1584375263679">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1407" height="56" key="GridCell.Tab.0.left/70.27.1430.973@70.27.1430.973" timestamp="1584291110646" />
+    <state width="1489" height="79" key="GridCell.Tab.0.left/70.27.1512.897@70.27.1512.897" timestamp="1584373075307" />
+    <state width="1827" height="108" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584375263679" />
+    <state width="2907" height="56" key="GridCell.Tab.0.left/70.27.2930.1973@70.27.2930.1973" timestamp="1584291792711" />
+    <state width="1827" height="108" key="GridCell.Tab.0.right" timestamp="1584375263680">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1407" height="56" key="GridCell.Tab.0.right/70.27.1430.973@70.27.1430.973" timestamp="1584291110647" />
+    <state width="1489" height="79" key="GridCell.Tab.0.right/70.27.1512.897@70.27.1512.897" timestamp="1584373075308" />
+    <state width="1827" height="108" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584375263680" />
+    <state width="2907" height="56" key="GridCell.Tab.0.right/70.27.2930.1973@70.27.2930.1973" timestamp="1584291792713" />
+    <state x="567" y="202" width="432" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583125995109">
+      <screen x="70" y="27" width="1430" height="973" />
+    </state>
+    <state x="567" y="202" width="432" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1430.973@70.27.1430.973" timestamp="1583125995109" />
+    <state x="643" y="264" width="704" height="578" key="find.popup" timestamp="1584304942199">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="643" y="264" width="704" height="578" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584304942199" />
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1584313048528">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584313048528" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1584307047447">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="525" y="241" width="672" height="627" key="search.everywhere.popup/70.27.1430.973@70.27.1430.973" timestamp="1584293753570" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584307047447" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/containers/Query.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
