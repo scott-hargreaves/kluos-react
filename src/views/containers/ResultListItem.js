@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 
 const mapDispatchToProps = ( dispatch ) => ({
     setLandUseEditing: ( landUseId ) => dispatch( uiActions.setLandUseEditing( landUseId ) ),
+    zoomToSites: ( siteIds ) => dispatch( uiOperations.zoomToSites( siteIds ) ),
     toggleResultSelected: ( query, result, selected ) => dispatch( uiOperations.toggleResultSelected( query, result, selected ) ),
 });
 

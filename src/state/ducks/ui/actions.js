@@ -11,6 +11,8 @@ const setSitesSelected = createAction( types.SITES_SETSELECTED, ( siteIds, selec
 const toggleQueryOpen = createAction( types.QUERY_TOGGLEOPEN, ( open ) => ({ open }) );
 const toggleQueryVisible = createAction( types.QUERY_TOGGLEVISIBLE, ( queryId, visible ) => ({ queryId, visible }) );
 
+const setZoomToSites = createAction( types.SITES_SETZOOMTO, ( sites ) => ({ sites }) );
+
 export default {
     deleteQuery,
     deleteSite,
@@ -21,4 +23,5 @@ export default {
     setSitesSelected,
     toggleQueryOpen,
     toggleQueryVisible,
+    setZoomToSites
 }

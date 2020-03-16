@@ -26,7 +26,7 @@ const SELECTED_STYLE = {
 };
 
 const SITE_STYLE = {
-    color: "#3399ff",
+    color: "#withStyles(styles)3399ff",
     fillColor: "#3399ff",
     fillOpacity: 0.20,
     opacity: 0.75,
@@ -54,8 +54,11 @@ class SiteGeoJSON extends React.Component {
 
     handleOnClick = ( evt ) => {
 
-        const selected =  !evt.originalEvent.ctrlKey;
-        this.props.toggleSiteSelected( this.props.site, selected);
+        if(this.props.onClick)
+            this.props.onClick({
+                site:  this.props.site,
+                selected: !evt.originalEvent.ctrlKey
+            });
 
     };
 

@@ -14,11 +14,12 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import MenuList from "@material-ui/core/MenuList";
 import Divider from "@material-ui/core/Divider";
 
-import CenterFocusStrongIcon from '@material-ui/icons/CenterFocusStrong';
-import EditIcon from '@material-ui/icons/Edit';
+
+
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+
 import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ResultItemMenu from "./ResultItemMenu";
 
 const styles = theme => ({
     root: {
@@ -76,27 +77,27 @@ class ResultListItem extends React.Component {
 
     handleActionOnClick = ( evt ) => {
         evt.stopPropagation();
-        this.setState({
-            menuOpen: true
-        });
-
-    };
-
-    handleEditOnClick = ( ) => {
-        this.props.setLandUseEditing( this.props.result.id );
-        this.setState( { menuOpen: false} );
+        this.setState({ menuOpen: true });
     };
 
     handleMenuOnClose = ( ) => {
-        this.setState( { menuOpen: false} );
+       this.setState( { menuOpen: false} );
     };
 
     handleOnClick = ( evt ) => {
-
         const selected =  !evt.ctrlKey;
         this.props.toggleResultSelected( this.props.query, this.props.result, selected);
     };
 
+    handleOnEditClick = ( evt ) => {
+        this.props.setLandUseEditing( this.props.result.id );
+        this.setState( { menuOpen: false} );
+    };
+
+    handleOnZoomToClick = ( evt ) => {
+        this.props.zoomToSites( this.props.result.siteRefs );
+        this.setState( { menuOpen: false} );
+    };
 
     render() {
         const { classes, result, selected, editable } = this.props;
@@ -105,10 +106,10 @@ class ResultListItem extends React.Component {
         return(
                 <ListItem
                     alignItems="flex-start"
-                    button 
+                    button
+                    classes={ { container: classes.container } }
                     dense
                     selected={ selected }
-                    classes={ { container: classes.container } }
                     style={{ zIndex: 2 }}
                     onClick={ this.handleOnClick }
                 >
@@ -144,7 +145,6 @@ class ResultListItem extends React.Component {
                                     { result.score.toFixed(2 ) }
                                 </Typography>
                             </>
-
                          }
                         classes={{
                             multiline: classes.multiline,
@@ -168,6 +168,17 @@ class ResultListItem extends React.Component {
                             <MoreVertIcon />
                         </IconButton>
 
+                        <ResultItemMenu
+                            anchorEl={ this.anchorRef.current }
+                            open={ menuOpen }
+                            editable={ editable }
+                            result={ result }
+                            onClose={ this.handleMenuOnClose }
+                            onEditClick={ this.handleOnEditClick }
+                            onZoomToClick={ this.handleOnZoomToClick }
+                        />
+
+                        {/*
                         <Menu
                             anchorEl={ this.anchorRef.current }
                             open={ menuOpen }
@@ -193,6 +204,7 @@ class ResultListItem extends React.Component {
                             }
 
                         </Menu>
+                        */}
 
                     </ListItemSecondaryAction>
 

@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0353b3f-d604-41e7-b8f7-21a8528e9bb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/components/leaflet/ZoomSiteLayerGroup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/containers/EditorMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/map/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/map/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/ui/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/ui/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/ui/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/ui/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/ui/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/ui/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/ui/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/ui/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/Map.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/editor/LandUseEditor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/editor/LandUseEditor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/editor/SiteActivityEditor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/editor/SiteActivityEditor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/editor/SiteEditor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/editor/SiteEditor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/leaflet/SiteGeoJSON.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/leaflet/SiteGeoJSON.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/leaflet/SiteLayerGroup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/leaflet/SiteLayerGroup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/query/ResultItemMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/query/ResultItemMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/query/ResultListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/query/ResultListItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/containers/LandUseEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/containers/LandUseEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/containers/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/containers/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/containers/ResultListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/containers/ResultListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/containers/SiteGeoJSON.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +119,7 @@
       <workItem from="1584291136139" duration="652000" />
       <workItem from="1584291833521" duration="3640000" />
       <workItem from="1584296948409" duration="19045000" />
-      <workItem from="1584374933272" duration="1151000" />
+      <workItem from="1584374933272" duration="23694000" />
     </task>
     <task id="LOCAL-00001" summary="Version 1.0">
       <created>1584375595828</created>
@@ -108,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584375595828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Version 1.0">
+      <created>1584376101891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584376101891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,14 +158,14 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584226291599" />
-    <state x="519" y="97" width="941" height="919" key="CommitChangelistDialog2" timestamp="1584375594935">
+    <state x="519" y="97" width="941" height="919" key="CommitChangelistDialog2" timestamp="1584401543033">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="519" y="97" width="941" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584375594935" />
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584316123536">
+    <state x="519" y="97" width="941" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584401543033" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584377329073">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584316123536" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584377329073" />
     <state width="1827" height="108" key="GridCell.Tab.0.bottom" timestamp="1584375263681">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -167,27 +194,27 @@
     <state width="1489" height="79" key="GridCell.Tab.0.right/70.27.1512.897@70.27.1512.897" timestamp="1584373075308" />
     <state width="1827" height="108" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584375263680" />
     <state width="2907" height="56" key="GridCell.Tab.0.right/70.27.2930.1973@70.27.2930.1973" timestamp="1584291792713" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584375669300">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584376104363">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584375669300" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584376104363" />
     <state x="567" y="202" width="432" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583125995109">
       <screen x="70" y="27" width="1430" height="973" />
     </state>
     <state x="567" y="202" width="432" height="633" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1430.973@70.27.1430.973" timestamp="1583125995109" />
-    <state x="643" y="264" width="704" height="578" key="find.popup" timestamp="1584304942199">
+    <state x="643" y="264" width="704" height="578" key="find.popup" timestamp="1584382338775">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="643" y="264" width="704" height="578" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584304942199" />
-    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1584313048528">
+    <state x="643" y="264" width="704" height="578" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584382338775" />
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1584381027306">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584313048528" />
-    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1584307047447">
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584381027306" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1584399456573">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="525" y="241" width="672" height="627" key="search.everywhere.popup/70.27.1430.973@70.27.1430.973" timestamp="1584293753570" />
-    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584307047447" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584399456573" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

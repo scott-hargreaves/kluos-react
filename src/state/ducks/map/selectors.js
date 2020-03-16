@@ -1,5 +1,15 @@
 import { uiSelectors } from "../ui";
 
+function getSites ( state, landUse ) {
+
+    return !!landUse ?
+        landUse.siteRefs.map( (siteId) => {
+            return state.map.sites.cache[ siteId ];
+        }) :
+        [];
+
+}
+
 function getSortedSites( state ) {
 
     const sites =  Object.values(state.map.sites.cache)
@@ -22,5 +32,6 @@ function getSortedSites( state ) {
 }
 
 export default {
+    getSites,
     getSortedSites,
 }

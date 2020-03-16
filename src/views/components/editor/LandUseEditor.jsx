@@ -66,7 +66,7 @@ class LandUseEditor extends React.Component {
     };
 
     render() {
-        const { classes, landUse, editable } = this.props;
+        const { classes, landUse, editable, sites } = this.props;
 
         return (
             <div className={classes.root}>
@@ -106,7 +106,7 @@ class LandUseEditor extends React.Component {
                                     >
                                         <Box style={{height:'100%', paddingLeft:8}}>
                                             <SiteEditorContainer
-                                                sites={ landUse.sites }
+                                                sites={ sites }
                                             />
                                         </Box>
 

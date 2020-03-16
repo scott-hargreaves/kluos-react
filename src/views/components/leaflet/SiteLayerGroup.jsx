@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SiteGeoJSONContainer from '../../containers/SiteGeoJSON';
 import { FeatureGroup } from 'react-leaflet';
 import SiteGeoJSON from "./SiteGeoJSON";
 
@@ -17,21 +16,23 @@ class SiteLayerGroup extends React.Component {
             null;
     }
 
-    handleOnSelected = ( evt ) => {
+    handleSiteOnClick = ( evt ) => {
         if(this.props.onSiteSelected) this.props.onSiteSelected( evt );
     };
 
     render() {
-        const { sites } = this.props;
+        const { getSiteColor, selectionIndex, sites } = this.props;
 
         const geoJson = Object.values(sites).map( (site, idx) => {
             if(!site) return null;
 
-            return <SiteGeoJSONContainer
+            return <SiteGeoJSON
                 key={ site.id }
+                color={ getSiteColor( site.id ) }
                 index={ idx }
+                selectedIndex={ selectionIndex( site.id ) }
                 site={ site }
-                onSelected={ this.handleOnSelected }
+                onClick={ this.handleSiteOnClick }
             />
         });
 

@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 
 import LandUseEditorComponent from '../components/editor/LandUseEditor';
 import { landUseOperations, landUseSelectors } from "../../state/ducks/landUse";
+import { mapSelectors } from "../../state/ducks/map";
 import { sessionSelectors } from "../../state/ducks/session";
-import {uiOperations} from "../../state/ducks/ui";
+import { uiOperations } from "../../state/ducks/ui";
 
 
 
@@ -17,7 +18,8 @@ const mapDispatchToProps = ( dispatch ) => ({
 const mapStateToProps = ( state ) => ({
     editable: sessionSelectors.canEdit( state ),
     landUseId: state.ui.landUse.editing,
-    landUse: landUseSelectors.getActive( state )
+    landUse: landUseSelectors.getActive( state ),
+    sites: mapSelectors.getSites( state, landUseSelectors.getActive( state ) ),
 });
 
 export default connect( mapStateToProps, mapDispatchToProps, null, { forwardRef: true } )( LandUseEditorComponent );

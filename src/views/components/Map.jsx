@@ -16,6 +16,9 @@ import { CRS } from 'leaflet';
 
 import {FeatureGroup, GeoJSON, Map as LeafletMap, Popup} from 'react-leaflet';
 import Control  from 'react-leaflet-control';
+import ZoomSiteLayerGroup from "./leaflet/ZoomSiteLayerGroup";
+
+import isEqual from 'lodash/isEqual';
 
 const styles = theme => ({
     root: {
@@ -62,33 +65,78 @@ class Map extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = { ...props };
+
         this.mapRef = React.createRef();
         this.irGroupRef = React.createRef();
         this.siteGroupRef = React.createRef();
+        this.zoomGroupRef = React.createRef()
     }
 
-    componentDidMount() {
-        if(this.props.fetchIrData) this.props.fetchIrData()
-    }
+    componentDidMount = () => {
+        if(this.props.fetchIrData){
+            this.props.fetchIrData()
+        }
+        else {
 
-    componentDidUpdate(prevProps) {
-
-        if((this.props.irData && !prevProps.irData) || (this.props.queryCount > prevProps.queryCount)) {
             setTimeout(() => {
-                this.handleOnCenterClick();
+                try {
+                    this.zoomToLayer(
+                        this.siteGroupRef.current.getBounds() ? this.siteGroupRef.current : this.irGroupRef.current.leafletElement,
+                        false
+                    );
+                }
+                catch(err) { }
             }, 1000);
+
+        }
+    };
+
+    componentDidUpdate = ( prevProps, prevState) => {
+
+        if(!isEqual(this.props.irData, prevProps.irData)) {
+            this.zoomToLayer( this.irGroupRef.current.leafletElement, true );
+        }
+        else if (this.props.zoom && !isEqual(this.props.zoom, prevProps.zoom )) {
+            this.zoomToLayer( this.zoomGroupRef.current, false );
+        }
+        else if( (this.props.queryCount > prevProps.queryCount) || this.props.forceZoom ) {
+            this.zoomToLayer( this.siteGroupRef.current, true );
         }
 
-    }
+    };
 
     handleOnCenterClick = ( ) => {
-        const bounds = this.siteGroupRef.current.getBounds() || this.irGroupRef.current.leafletElement.getBounds();
-        const map = this.mapRef;
-        map.current.leafletElement.flyToBounds(bounds, { maxZoom: 13 });
+
+        this.zoomToLayer(
+            this.siteGroupRef.current.getBounds() ? this.siteGroupRef.current : this.irGroupRef.current.leafletElement,
+            false
+        );
+    };
+
+    handleOnSiteSelected = ( evt ) => {
+        this.props.toggleSiteSelected( evt.site, evt.selected);
+    };
+
+    zoomToLayer = ( layer, deferred ) => {
+
+        if(!layer)
+                return;
+
+        setTimeout(() => {
+            try {
+                const bounds = layer.getBounds();
+                const map = this.mapRef;
+                map.current.leafletElement.flyToBounds(bounds, { maxZoom: 13 });
+            }
+            catch(err) { }
+        }, deferred ? 1000: 1);
+
+
     };
 
     render() {
-        const { classes, urls, irData, sites } = this.props;
+        const { classes, getSiteColor, selectionIndex, urls, irData, sites, zoom } = this.props;
 
         return (
             <div className={ classes.root }>
@@ -117,6 +165,15 @@ class Map extends React.Component {
                         </Tooltip>
                     </Control>
 
+                    {zoom &&
+                        <ZoomSiteLayerGroup
+                            ref={ this.zoomGroupRef }
+                            sites={ zoom.sites }
+                            zIndex={ 0 }
+                            style={{ display: 'none' }}
+                        />
+                    }
+
                     <VectorTileLayer
                         accessToken={ MAPBOX_ACCESS_TOKEN }
                         baseApiUrl={ urls.openmap_tiles }
@@ -139,7 +196,10 @@ class Map extends React.Component {
 
                     <SiteLayerGroup
                         ref={ this.siteGroupRef }
+                        getSiteColor={ getSiteColor }
+                        selectionIndex={ selectionIndex }
                         sites={ sites }
+                        onSiteSelected={ this.handleOnSiteSelected }
                     />
 
                 </LeafletMap>

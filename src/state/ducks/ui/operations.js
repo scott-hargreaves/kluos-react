@@ -62,8 +62,20 @@ const toggleSiteSelected = ( site, selected ) => ( dispatch, getState ) => {
 
 };
 
+const zoomToSites = ( siteIds ) => ( dispatch, getState ) => {
+
+    const cache = getState().map.sites.cache;
+    dispatch( actions.setZoomToSites(
+        siteIds.map( ( siteId ) => {
+            return cache[ siteId ];
+        })
+    ));
+
+};
+
 export default {
     cancelLandUseEditing,
     toggleResultSelected,
     toggleSiteSelected,
+    zoomToSites,
 }

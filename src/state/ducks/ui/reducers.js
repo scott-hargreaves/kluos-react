@@ -88,7 +88,7 @@ const lookupReducer = handleActions({
             const _selected = selected ?
                 clear ?
                     siteIds :
-                        state.selected.concat( siteIds.filter( (siteId) => {
+                    state.selected.concat( siteIds.filter( (siteId) => {
                         return !state.selected.includes( siteId );
                     })) :
                 state.selected.filter( ( siteId ) => {
@@ -101,9 +101,20 @@ const lookupReducer = handleActions({
             }
         },
 
+        [ actions.setZoomToSites ]: ( state, { payload: { sites }}) => {
+            return {
+                ...state,
+                zoom: {
+                    id: (new Date()).getTime(),
+                    sites: sites
+                }
+            }
+        },
+
     },
     {
         selected: [],
+        zoom: null
     }
 );
 

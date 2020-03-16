@@ -15,6 +15,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
 import { withStyles } from '@material-ui/core/styles';
+import EditorMap from "../containers/EditorMap";
 
 const styles = theme => ({
     root: {
@@ -84,7 +85,10 @@ class Dashboard extends React.Component {
                 </AppBar>
 
                 <Box className={ classes.mapBox }>
-                    { <MapContainer /> }
+                    <MapContainer
+                        key="mainMap"
+                        name="mainMap"
+                    />
                 </Box>
 
                 <Box className={ classes.searchBox }>

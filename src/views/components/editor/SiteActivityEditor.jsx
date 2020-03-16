@@ -46,30 +46,6 @@ const styles = theme => ({
     }
 });
 
-const names = [
-    'Oliver Hansen',
-    'Van Henry',
-    'April Tucker',
-    'Ralph Hubbard',
-    'Omar Alexander',
-    'Carlos Abbott',
-    'Miriam Wagner',
-    'Bradley Wilkerson',
-    'Virginia Andrews',
-    'Kelly Snyder',
-];
-
-const ceremonialOptions = [
-    'Canoe Pole',
-    'Initiation Site',
-    'Questing',
-    'Menstrual Seclusion',
-    'Longhouse',
-    'Coming of Age',
-    'Sacred (Power) Place',
-    'Spiritual Knotted Tree',
-]
-
 class SiteActivityEditor extends React.Component {
 
     constructor( props ) {
